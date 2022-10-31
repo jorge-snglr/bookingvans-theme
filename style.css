@@ -1,0 +1,203 @@
+/*
+Theme Name: 				Booking Vans Theme
+Theme URI: 					https://bookingvans.com
+Template: 				    mybooking
+Author: 					Mybooking
+Author URI: 				https://mybooking.es
+Description: 				Tema basado en Mybooking Theme para Booking Vans
+Tags: 						e-commerce,blog
+Version:            		1.0.0
+Requires at least:  		5.2
+Tested up to:       		6.0.2
+Requires PHP:       		7.2
+License:            		GNU General Public License v2 or later
+License URI:        		https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:        		bookingvans
+Domain Path:        		/languages
+*/
+
+
+/**
+    BOOKING VANS CUSTOM STYLES
+*/
+
+:root {
+	--mb-accent-color: var(--brand-primary);
+	--sticky-bar-bg: var(--mb-accent-color)
+}
+
+.navbar-collapse.show {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.dropdown-menu {
+  padding: 1rem 0!important;
+  background-color: #289999;
+  border: 0;
+  border-radius: 0;
+	min-width: 250px
+} @media( min-width: 575.91px ) {
+	.dropdown-menu {
+		border-radius: 10px;
+	}
+}
+
+.dropdown-item {
+  padding: .5rem 1.5rem;
+	font-weight: 700;
+	font-size: 1.2em;
+}
+
+.mb-negative-logo-color {
+	filter: brightness(0) invert(1);
+}
+
+@media (min-width: 991.98px) {
+	.home .nav-container-absolute .custom-logo-link img {
+       filter: brightness(0) invert(1);
+	}
+}
+
+
+.mybooking-nav-btn a {
+	padding: 8px 24px!important;
+	font-size: 16px;
+	font-weight: 600!important;
+	letter-spacing: 1px; /* Opcional */
+	color: white!important;
+	background-color: var( --brand-primary );
+	border-radius: 50px; /* Opcional */
+}
+
+.mybooking-nav-btn a:hover {
+	background-color: var( --brand-primary-dark );
+}
+
+.navbar-dark .navbar-nav .mybooking-nav-btn.active > .nav-link {
+	color: white!important;
+}
+
+.footer {
+  padding: 6rem 0 3rem 0;
+}
+
+.news_container {
+	display: none;
+}
+
+.mybooking-campers_btn-book {
+  border-radius: 50px !important;
+}
+
+.mybooking-campers_grid {
+  justify-content: space-between;
+  margin: 0;
+}
+
+.mb-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+@media (min-width: 575.98px) {
+	.mybooking-campers_post-header {
+		font-size: 3em;
+	}
+	.mybooking-campers_price {
+		font-size: 30px;
+	}
+}
+
+.mybooking-campers_carousel-img {
+	min-width: 100%;
+	border-radius: 10px!important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+	font-size: 1.1em;
+  font-weight: 700;
+}
+
+.steps-bg-color {
+  background-color: transparent
+}
+
+.mb-card.mybooking-campers_product-form {
+  background-color: var(--brand-secondary);
+}
+
+.mybooking-campers_video iframe {
+  border-radius: 10px;
+}
+
+.page_header img {
+  width: 100%;
+	filter: brightness(70%)
+}
+
+.page_sidebar {
+  padding: 2rem 2rem 0 2rem;
+  border-radius: 10px;
+}
+
+
+@media (min-width: 1200px) {
+	.navbar-expand-lg .navbar-nav .nav-link {
+		padding-right: 1.15rem;
+		padding-left: 1.15rem;
+	}
+}
+
+@media (min-width: 992px) {
+	.navbar-expand-lg .navbar-nav .nav-link {
+		padding-right: 0.75rem;
+		padding-left: 0.75rem;
+	}
+}
+@media (max-width: 991px) {
+	
+	li#menu-item-3274 .dropdown-menu.show {
+		display: flex;
+		justify-content: center;
+	}
+	
+	
+	li#menu-item-3271,
+	li#menu-item-3272,
+	li#menu-item-3273 {
+		padding-left: 75px;
+		position: relative;
+		margin: auto;
+		text-align: left;
+	}
+
+	li#menu-item-3271:before,
+	li#menu-item-3272:before,
+	li#menu-item-3273:before {
+		content: "";
+		width: 50px;
+		display: inline-block;
+		position: absolute;
+		height: 50px;
+		top: -5px;
+		left: 20px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+
+	}
+
+	li#menu-item-3271:before {
+		background-image: url('images/menu-icons/perfiladas.svg');
+	}
+
+	li#menu-item-3272:before {
+		background-image: url('images/menu-icons/capuchinas.svg');
+	}
+
+	li#menu-item-3273:before {
+		background-image: url('images/menu-icons/campers.svg');
+	}
+}
+
